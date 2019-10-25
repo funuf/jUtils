@@ -1,0 +1,42 @@
+----------0.0.1
+增加UnitUtils
+
+----------0.0.2
+移动UnitUtils
+增加converter、predicate的包，增加Empty、EmptyString类
+
+----------0.0.3
+修改单次拼错
+
+----------0.0.4
+增加TimeBrush类
+
+----------0.0.5
+优化TimeBrush类：sdf变量取消static修饰符
+
+----------0.0.6
+增加R 类
+
+----------0.0.7
+优化R 类
+
+----------0.0.8
+增加RM 类
+
+----------0.0.9
+增加ImageSnapshot类，增加FileMd5类 【引入fastjson依赖】
+
+----------0.0.10
+增加JUtils工具类，增加Uuid工具类，【引入lombok依赖】
+
+----------0.0.11
+lombok依赖从 compileOnly 换成 implementation，否则其他项目用到的时候，没有setter/getter
+
+----------0.0.12
+优化FileMd5类，是否关闭流由调用方指定
+
+----------0.0.13
+Empty类增加anyNo方法
+
+----------0.0.14
+Idea独自发布测试

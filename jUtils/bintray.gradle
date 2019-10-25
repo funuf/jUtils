@@ -1,0 +1,53 @@
+apply plugin: 'java-library'
+apply plugin: 'com.jfrog.bintray'
+// 上传函数库到Bintray时需要用到
+
+version = _version
+
+
+task javadocs(type: Javadoc) { // A
+    source = sourceSets.main.java.srcDirs
+    options.encoding 'UTF-8'
+}
+
+task javadocJar(type: Jar, dependsOn: javadocs) {
+    classifier = 'javadoc'
+    from javadocs.destinationDir // B 引用A
+}
+
+task sourcesJar(type: Jar) { //C
+    classifier = 'sources'
+    from sourceSets.main.java.srcDirs
+}
+
+artifacts {
+    archives javadocJar // 引用B
+    archives sourcesJar // 引用C
+}
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+bintray{
+    user = properties.getProperty('bintray.user')
+    key = properties.getProperty('bintray.apikey')
+
+    configurations = ['archives']
+
+    pkg{
+        repo = _bintrayRepo
+        name = _bintrayName
+        websiteUrl = _siteUrl
+        vcsUrl = _gitUrl
+        licenses = _allLicenses
+        publish = true
+        publicDownloadNumbers = true
+        version {
+            desc = _description
+            gpg{
+                sign = true
+                passphrase = properties.getProperty('bintray.gpg.password')
+            }
+        }
+    }
+}

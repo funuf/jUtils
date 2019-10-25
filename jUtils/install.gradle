@@ -1,0 +1,46 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = _groupId
+
+install {
+    repositories.mavenInstaller {
+        // 生成pom文件
+        pom {
+            project {
+                packaging 'jar'
+
+                groupId _groupId
+                artifactId _artifactId
+                version _version
+                name _name
+                description _description
+                url _siteUrl
+
+                // 授权许可
+                licenses {
+                    license {
+                        name _licenseName
+                        url _licenseUrl
+                        distribution 'repo'
+                    }
+                }
+
+                // 开发者信息
+                developers {
+                    developer {
+                        id _developerId
+                        name _developerName
+                        email _developerEmail
+                    }
+                }
+
+                //设置软件配置管理
+                scm {
+                    connection _gitUrl
+                    developerConnection _gitUrl
+                    url _siteUrl
+                }
+            }
+        }
+    }
+}

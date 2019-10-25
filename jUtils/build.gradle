@@ -1,0 +1,44 @@
+group 'fun.hellofun'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+//最好加上全局编码设置
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'com.alibaba:fastjson:1.2.48'
+    implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.8'
+}
+
+ext{
+    _bintrayRepo = 'maven' // bintray 仓库名
+    _bintrayName = 'jUtils' // bintray package名，也是gradle的ModuleName
+
+    _description = 'This is my java utils' // pom.xml 的<description>
+    _name = 'jUtils' // pom.xml 的<name>
+    _artifactId = 'jUtils' // pom.xml 的<artifactId>
+    _groupId = 'fun.hellofun' // pom.xml 的<groupId>
+    _version = '0.0.14' // pom.xml 的<version>
+
+    _developerId = '张东冬'
+    _developerName = '张东冬'
+    _developerEmail = 'rangwocao@gmail.com'
+
+    _siteUrl = 'http://zdd.hellofun.fun' // pom.xml 的<url>
+    _gitUrl = 'https://github.com/sockeqwe/mosby'
+
+    _licenseName = 'The Apache Software License, Version 2.0'
+    _licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    _allLicenses = [ 'Apache-2.0' ]
+}
+
+apply from: 'install.gradle'
+apply from: 'bintray.gradle'
