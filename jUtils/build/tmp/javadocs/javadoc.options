@@ -1,8 +1,8 @@
 -d 'D:\\privatepro\\keyboard-knife-library-java\\jUtils\\build\\docs\\javadoc'
--doctitle 'jUtils 0.0.14 API'
+-doctitle 'jUtils 0.0.16 API'
 -encoding 'UTF-8'
 -quiet 
--windowtitle 'jUtils 0.0.14 API'
+-windowtitle 'jUtils 0.0.16 API'
 'D:\\privatepro\\keyboard-knife-library-java\\jUtils\\src\\main\\java\\fun\\hellofun\\jUtils\\classes\\map\\R.java'
 'D:\\privatepro\\keyboard-knife-library-java\\jUtils\\src\\main\\java\\fun\\hellofun\\jUtils\\classes\\oss\\ImageSnapshot.java'
 'D:\\privatepro\\keyboard-knife-library-java\\jUtils\\src\\main\\java\\fun\\hellofun\\jUtils\\classes\\package-info.java'
@@ -10,6 +10,7 @@
 'D:\\privatepro\\keyboard-knife-library-java\\jUtils\\src\\main\\java\\fun\\hellofun\\jUtils\\converter\\Null.java'
 'D:\\privatepro\\keyboard-knife-library-java\\jUtils\\src\\main\\java\\fun\\hellofun\\jUtils\\converter\\package-info.java'
 'D:\\privatepro\\keyboard-knife-library-java\\jUtils\\src\\main\\java\\fun\\hellofun\\jUtils\\converter\\TimeBrush.java'
+'D:\\privatepro\\keyboard-knife-library-java\\jUtils\\src\\main\\java\\fun\\hellofun\\jUtils\\converter\\TimeUtils.java'
 'D:\\privatepro\\keyboard-knife-library-java\\jUtils\\src\\main\\java\\fun\\hellofun\\jUtils\\converter\\UnitUtils.java'
 'D:\\privatepro\\keyboard-knife-library-java\\jUtils\\src\\main\\java\\fun\\hellofun\\jUtils\\creater\\Uuid.java'
 'D:\\privatepro\\keyboard-knife-library-java\\jUtils\\src\\main\\java\\fun\\hellofun\\jUtils\\file\\FileMd5.java'

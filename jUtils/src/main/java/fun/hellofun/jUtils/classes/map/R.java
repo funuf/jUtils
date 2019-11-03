@@ -21,7 +21,7 @@ public class R extends HashMap<String, Object> {
     /**
      * 提示语
      */
-    private static final String TIP = "tip";
+    private static String TIP = "tip";
     /**
      * 有效载荷
      */
@@ -29,12 +29,12 @@ public class R extends HashMap<String, Object> {
     /**
      * 系统当前时间
      */
-    private static final String TIME = "time";
+    private static String TIME = "time";
 
     /**
      * 业务成功码
      */
-    public static final int CODE_SUCCESS = 100;
+    public static int CODE_SUCCESS = 100;
 
     /**
      * 默认业务错误码
@@ -45,6 +45,17 @@ public class R extends HashMap<String, Object> {
      * 默认业务错误提示语
      */
     public static final String DEFAULT_ERROR_TIP = "锄禾日当午，服务器真辛苦...";
+
+
+    /**
+     * 工作使用
+     */
+    public static void usedByQcsd() {
+        CODE_SUCCESS = 1;
+        TIP = "msg";
+        TIME = "responseTime";
+    }
+
 
     private static final R get(int code) {
         R r = new R();
