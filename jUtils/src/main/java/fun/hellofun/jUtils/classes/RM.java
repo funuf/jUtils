@@ -5,6 +5,7 @@ import fun.hellofun.jUtils.classes.map.R;
 /**
  * 该类由 <b>张东冬</b> 于 2019年10月11日 星期五 15时04分56秒 创建；<br>
  * 作用是：<b>对接口结果的映射(R map)，参考{@link R}</b>；<br>
+ * 供客户端接收结果使用
  */
 public class RM<T> {
     private int code;

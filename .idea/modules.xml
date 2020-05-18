@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jUtils.iml" filepath="$PROJECT_DIR$/.idea/modules/jUtils.iml" group="jUtils" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jUtils/jUtils_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jUtils/jUtils_main.iml" group="jUtils" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jUtils/jUtils_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jUtils/jUtils_test.iml" group="jUtils" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library.iml" filepath="$PROJECT_DIR$/.idea/modules/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jUtils.iml" filepath="$PROJECT_DIR$/.idea/modules/jUtils.iml" group="library/jUtils" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jUtils/jUtils_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jUtils/jUtils_main.iml" group="library/jUtils" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jUtils/jUtils_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jUtils/jUtils_test.iml" group="library/jUtils" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library.iml" filepath="$PROJECT_DIR$/.idea/modules/library.iml" group="library" />
     </modules>
   </component>
 </project>

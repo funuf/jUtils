@@ -7,6 +7,7 @@ import fun.hellofun.jUtils.predicate.empty.Empty;
 /**
  * 该类由 <b>张东冬</b> 于 2019年10月11日 星期五 10时06分02秒  创建；<br>
  * 作用是：<b>api项目的RESTful接口的返回类</b>；<br>
+ * 响应码参考  https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status
  */
 public class R extends HashMap<String, Object> {
 
@@ -34,7 +35,7 @@ public class R extends HashMap<String, Object> {
     /**
      * 业务成功码
      */
-    public static int CODE_SUCCESS = 100;
+    public static int CODE_SUCCESS = 200;
 
     /**
      * 默认业务错误码

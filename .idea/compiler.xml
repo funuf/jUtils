@@ -4,9 +4,7 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="jUtils_main" target="1.8" />
-      <module name="jUtils_test" target="1.8" />
+    <bytecodeTargetLevel target="1.8">
       <module name="library_main" target="1.8" />
       <module name="library_test" target="1.8" />
     </bytecodeTargetLevel>
