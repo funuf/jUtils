@@ -26,7 +26,7 @@ ext{
     _name = 'jUtils' // pom.xml 的<name>
     _artifactId = 'jUtils' // pom.xml 的<artifactId>
     _groupId = 'fun.hellofun' // pom.xml 的<groupId>
-    _version = '0.0.17' // pom.xml 的<version>
+    _version = '0.0.18' // pom.xml 的<version>
 
     _developerId = '张东冬'
     _developerName = '张东冬'

@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>fun.hellofun</groupId>
   <artifactId>jUtils</artifactId>
-  <version>0.0.17</version>
+  <version>0.0.18</version>
   <name>jUtils</name>
   <description>This is my java utils</description>
   <url>http://zdd.hellofun.fun</url>

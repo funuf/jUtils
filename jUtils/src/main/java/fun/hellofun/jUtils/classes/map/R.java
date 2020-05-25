@@ -43,6 +43,11 @@ public class R extends HashMap<String, Object> {
     public static final int CODE_ERROR = 500;
 
     /**
+     * 列表无数据
+     */
+    public static final int CODE_LIST_NO_CONTENT = 204;
+
+    /**
      * 默认业务错误提示语
      */
     public static final String DEFAULT_ERROR_TIP = "锄禾日当午，服务器真辛苦...";
@@ -100,6 +105,12 @@ public class R extends HashMap<String, Object> {
     public static final R error(int code, String tip, String reason) {
         R error = error(code, tip);
         error.put(REASON, reason);
+        return error;
+    }
+
+    public static final R noContent(String tip) {
+        R error = error(CODE_LIST_NO_CONTENT, tip);
+        error.put(TIP, tip);
         return error;
     }
 
