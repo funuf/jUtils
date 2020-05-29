@@ -48,6 +48,16 @@ public class R extends HashMap<String, Object> {
     public static final int CODE_LIST_NO_CONTENT = 204;
 
     /**
+     * 当前用户身份验证通过，但是操作的数据不是自己的数据
+     */
+    public static final int CODE_FORBIDDEN = 403;
+
+    /**
+     * 根据主键（或其他要素），找不到相应实体
+     */
+    public static final int CODE_NOT_FOUND_ENTITY = 404;
+
+    /**
      * 默认业务错误提示语
      */
     public static final String DEFAULT_ERROR_TIP = "锄禾日当午，服务器真辛苦...";
@@ -110,7 +120,16 @@ public class R extends HashMap<String, Object> {
 
     public static final R noContent(String tip) {
         R error = error(CODE_LIST_NO_CONTENT, tip);
-        error.put(TIP, tip);
+        return error;
+    }
+
+    public static final R forbidden() {
+        R error = error(CODE_FORBIDDEN, "无权进行该操作");
+        return error;
+    }
+
+    public static final R notFound() {
+        R error = error(CODE_NOT_FOUND_ENTITY, "未找到相关信息");
         return error;
     }
 
