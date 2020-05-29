@@ -58,6 +58,11 @@ public class R extends HashMap<String, Object> {
     public static final int CODE_NOT_FOUND_ENTITY = 404;
 
     /**
+     * 内容被禁用：正在访问的资源被锁定。
+     */
+    public static final int CODE_LOCKED = 423;
+
+    /**
      * 默认业务错误提示语
      */
     public static final String DEFAULT_ERROR_TIP = "锄禾日当午，服务器真辛苦...";
@@ -130,6 +135,11 @@ public class R extends HashMap<String, Object> {
 
     public static final R notFound() {
         R error = error(CODE_NOT_FOUND_ENTITY, "未找到相关信息");
+        return error;
+    }
+
+    public static final R locked() {
+        R error = error(CODE_LOCKED, "相关信息已被锁定");
         return error;
     }
 

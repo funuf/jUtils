@@ -1,8 +1,8 @@
 -d 'D:\\privatepro\\keyboard-knife-library-java\\jUtils\\build\\docs\\javadoc'
--doctitle 'jUtils 0.0.21 API'
+-doctitle 'jUtils 0.0.22 API'
 -encoding 'UTF-8'
 -quiet 
--windowtitle 'jUtils 0.0.21 API'
+-windowtitle 'jUtils 0.0.22 API'
 'D:\\privatepro\\keyboard-knife-library-java\\jUtils\\src\\main\\java\\fun\\hellofun\\jUtils\\classes\\map\\R.java'
 'D:\\privatepro\\keyboard-knife-library-java\\jUtils\\src\\main\\java\\fun\\hellofun\\jUtils\\classes\\oss\\ImageSnapshot.java'
 'D:\\privatepro\\keyboard-knife-library-java\\jUtils\\src\\main\\java\\fun\\hellofun\\jUtils\\classes\\package-info.java'
